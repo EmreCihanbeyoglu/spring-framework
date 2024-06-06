@@ -3,6 +3,7 @@ package com.cydeo;
 import com.cydeo.config.ProjectConfig;
 import com.cydeo.model.Comment;
 import com.cydeo.service.CommentService;
+import com.cydeo.service.NotificationService;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
@@ -17,5 +18,8 @@ public class CydeoApp {
         ApplicationContext context = new AnnotationConfigApplicationContext(ProjectConfig.class);
         CommentService commentService = context.getBean(CommentService.class);
         commentService.publishComment(comment);
+
+        NotificationService notificationService = context.getBean(NotificationService.class);
+        notificationService.publishNotification(comment);
     }
 }
