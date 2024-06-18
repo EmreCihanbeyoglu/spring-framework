@@ -6,6 +6,8 @@
       <list>
         <option value="$PROJECT_DIR$/spring-04-abstraction/pom.xml" />
         <option value="$PROJECT_DIR$/spring-05-springBoot-demo/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-06-MVC-controller/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-07-MVC-model/pom.xml" />
       </list>
     </option>
   </component>
