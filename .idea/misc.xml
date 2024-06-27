@@ -8,6 +8,8 @@
         <option value="$PROJECT_DIR$/spring-05-springBoot-demo/pom.xml" />
         <option value="$PROJECT_DIR$/spring-06-MVC-controller/pom.xml" />
         <option value="$PROJECT_DIR$/spring-07-MVC-model/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-08-thymeleaf/pom.xml" />
+        <option value="$PROJECT_DIR$/employee-registration/pom.xml" />
       </list>
     </option>
   </component>

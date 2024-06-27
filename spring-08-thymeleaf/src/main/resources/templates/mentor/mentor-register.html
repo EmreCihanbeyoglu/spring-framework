@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<form th:action="@{/mentor/confirm}" method=post th:object="${mentor}">
+    <div class="form-control">
+        <label for="firstname">Firstname: </label>
+        <input type="text" name="firstname" id="firstname" th:field="*{firstname}">
+    </div>
+
+    <div class="form-control">
+        <label for="lastname">Lastname: </label>
+        <input type="text" name="lastname" id="lastname" th:field="*{lastname}">
+    </div>
+
+    <div class="form-control">
+        <label for="email">Email: </label>
+        <input type="text" name="email" id="email" th:field="*{email}">
+    </div>
+
+    <div class="form-control">
+        <label>Gender: </label>
+        <input type="radio" value="Male" th:field="*{gender}">Male
+        <input type="radio" value="Female" th:field="*{gender}">Female
+    </div>
+
+    <div class="form-control">
+        <label for="batch">Batch: </label>
+        <select id="batch" th:field="*{batch}">
+            <option th:each="btch : ${batchList}" th:value="${btch}" th:text="${btch}"></option>
+        </select>
+    </div>
+
+    <div class="form-control">
+        <label for="graduated">Graduated: </label>
+        <input type="checkbox" name="graduated" id="graduated" th:field="*{graduated}">
+    </div>
+
+
+    <div class="form-control">
+        <label for="company">Company: </label>
+        <textarea th:field="*{company}" id="company"></textarea>
+    </div>
+
+    <div>
+        <button type="submit">Register</button>
+    </div>
+
+
+
+
+</form>
+
+</body>
+</html>

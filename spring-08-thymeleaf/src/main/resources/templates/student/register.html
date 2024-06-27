@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en"  xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title th:text="#{index.page.title}"></title>
+</head>
+<body>
+
+<h2>Welcome new student</h2>
+
+<!-- displaying value -->
+ <ul>
+     <li th:text="${students.get(0).getFirstname()}"></li>
+     <li th:text="${students.get(0).getLastname()}"></li>
+     <li th:text="${students.get(0).getAge()}"></li>
+     <li th:text="${students.get(0).getState()}"></li>
+ </ul>
+
+<!-- concatination -->
+<h3 th:text="${'firstname: ' + students.get(0).getFirstname()}"></h3>
+
+
+<!-- links -->
+<a th:href="@{https://cydeo.com/}">Cydeo page</a>
+<a th:href="@{/student/welcome}">Welcome page</a>
+
+<!-- links with query param - student/welcome?id=3-->
+<a th:href="@{/student/welcome(id=3)}"></a>
+
+
+<!-- iterations -->
+<ul>
+    <li th:each="student : ${students}" th:text="${student.getFirstname()}"></li>
+</ul>
+
+
+<table>
+    <thead>
+    <tr>
+        <th>Firstname</th>
+        <th>Lastname</th>
+        <th>Age</th>
+        <th>State</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr th:each="student : ${students}">
+        <td th:text="${student.getFirstname()}"></td>
+        <td th:text="${student.getLastname()}"></td>
+        <td th:text="${student.getAge()}"></td>
+        <td th:text="${student.getState()}"></td>
+    </tr>
+    </tbody>
+</table>
+
+<!-- conditional logic -->
+<div th:text="${students.get(0).getAge() > 25 ? 'ELIGIBLE' : 'NOT ELIGIBLE' }"></div>
+
+<div>
+    <span th:if="${students.get(0).getState().equals('Arizona')}">Arizona</span>
+    <span th:unless="${students.get(0).getState().equals('Arizona')}">Not Arizona</span>
+</div>
+
+
+
+</body>
+</html>
