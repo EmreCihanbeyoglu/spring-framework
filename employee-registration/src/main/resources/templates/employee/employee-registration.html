@@ -21,6 +21,11 @@
                     <div class="col-md-4">
                         <label for="firstname" class="form-label">First Name</label>
                         <input type="text" class="form-control" id="firstname" th:field="*{firstName}">
+                        <div th:if="${#fields.hasErrors('firstName')}">
+                            <ul>
+                                <li th:each="error : ${#fields.errors('firstName')}" th:text="${error}"></li>
+                            </ul>
+                        </div>
                     </div>
                     <div class="col-md-4">
                         <label for="lastname" class="form-label">Last Name</label>

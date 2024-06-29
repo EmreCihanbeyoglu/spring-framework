@@ -30,9 +30,8 @@
             <tr th:each="employee : ${employeeList}">
                 <td th:text="${employee.getFirstName()}"></td>
                 <td th:text="${employee.getLastName()}"></td>
-                <td th:text="${employee.getBirthDay()}"></td>
-                <td th:text="${employee.getAddress()}"></td>
-                <td th:text="${employee.getAddress2()}"></td>
+                <td th:text="${#execInfo.getNow().get(1) - employee.getBirthDay().getYear()}"></td>
+                <td th:text="${employee.getAddress() + ' ' + employee.getAddress2()}"></td>
                 <td th:text="${employee.getCity()}"></td>
                 <td th:text="${employee.getState()}"></td>
                 <td th:text="${employee.getZip()}"></td>
