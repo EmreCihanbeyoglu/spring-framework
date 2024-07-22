@@ -1,0 +1,1 @@
+In this repository, there is a Spring Boot application which uses Spring Data JPA and PostgreSQL for database access to create a table from entity classes.

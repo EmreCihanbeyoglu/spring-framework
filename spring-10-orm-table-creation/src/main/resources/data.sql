@@ -1,0 +1,1 @@
+insert into STUDENT(student_first_name, student_last_name, student_email) values('Emre', 'Cihan', 'emre@cihan.com');
