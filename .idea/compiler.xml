@@ -8,11 +8,13 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="spring-06-MVC-controller" />
-        <module name="spring-04-abstraction" />
         <module name="spring-05-springBoot-demo" />
         <module name="spring-07-MVC-model" />
         <module name="employee-registration" />
         <module name="spring-08-thymeleaf" />
+        <module name="spring-11-orm-mapping-oneToOne" />
+        <module name="spring-04-abstraction" />
+        <module name="spring-12-orm-many-relations" />
       </profile>
     </annotationProcessing>
   </component>
@@ -23,6 +25,8 @@
       <module name="spring-06-MVC-controller" options="-parameters" />
       <module name="spring-07-MVC-model" options="-parameters" />
       <module name="spring-08-thymeleaf" options="-parameters" />
+      <module name="spring-11-orm-mapping-oneToOne" options="-parameters" />
+      <module name="spring-12-orm-many-relations" options="-parameters" />
     </option>
   </component>
 </project>
