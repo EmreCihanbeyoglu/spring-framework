@@ -12,6 +12,7 @@
         <option value="$PROJECT_DIR$/employee-registration/pom.xml" />
         <option value="$PROJECT_DIR$/spring-11-orm-mapping-oneToOne/pom.xml" />
         <option value="$PROJECT_DIR$/spring-12-orm-many-relations/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-10-orm-table-creation/pom.xml" />
       </list>
     </option>
   </component>
