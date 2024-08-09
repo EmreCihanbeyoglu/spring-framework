@@ -5,6 +5,7 @@
       <module fileurl="file://$PROJECT_DIR$/spring-01-core-ioc/spring-01-core-ioc.iml" filepath="$PROJECT_DIR$/spring-01-core-ioc/spring-01-core-ioc.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-02-core-wiring/spring-02-core-wiring.iml" filepath="$PROJECT_DIR$/spring-02-core-wiring/spring-02-core-wiring.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-03-dependency-injection/spring-03-dependency-injection.iml" filepath="$PROJECT_DIR$/spring-03-dependency-injection/spring-03-dependency-injection.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-13-orm-ecommerce/spring-13-orm-ecommerce.iml" filepath="$PROJECT_DIR$/spring-13-orm-ecommerce/spring-13-orm-ecommerce.iml" />
     </modules>
   </component>
 </project>

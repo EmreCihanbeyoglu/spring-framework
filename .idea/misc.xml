@@ -13,7 +13,14 @@
         <option value="$PROJECT_DIR$/spring-11-orm-mapping-oneToOne/pom.xml" />
         <option value="$PROJECT_DIR$/spring-12-orm-many-relations/pom.xml" />
         <option value="$PROJECT_DIR$/spring-10-orm-table-creation/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-13-orm-bank-simulation/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-13-orm-ecommerce/pom.xml" />
       </list>
+    </option>
+    <option name="ignoredFiles">
+      <set>
+        <option value="$PROJECT_DIR$/spring-13-orm-bank-simulation/pom.xml" />
+      </set>
     </option>
   </component>
   <component name="ProjectRootManager" version="2" languageLevel="JDK_17" project-jdk-name="17" project-jdk-type="JavaSDK">
