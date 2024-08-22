@@ -9,9 +9,11 @@
         <outputRelativeToContentRoot value="true" />
         <module name="spring-06-MVC-controller" />
         <module name="spring-10-orm-table-creation" />
+        <module name="spring-15-orm-queries" />
         <module name="spring-05-springBoot-demo" />
         <module name="spring-07-MVC-model" />
         <module name="employee-registration" />
+        <module name="spring-14-orm-cinema-lab" />
         <module name="spring-08-thymeleaf" />
         <module name="spring-13-orm-ecommerce" />
         <module name="spring-11-orm-mapping-oneToOne" />
@@ -35,6 +37,8 @@
       <module name="spring-12-orm-many-relations" options="-parameters" />
       <module name="spring-13-orm-bank-simulation" options="-parameters" />
       <module name="spring-13-orm-ecommerce" options="-parameters" />
+      <module name="spring-14-orm-cinema-lab" options="-parameters" />
+      <module name="spring-15-orm-queries" options="-parameters" />
     </option>
   </component>
 </project>
