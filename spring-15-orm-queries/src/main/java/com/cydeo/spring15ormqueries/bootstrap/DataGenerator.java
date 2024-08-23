@@ -1,6 +1,7 @@
 package com.cydeo.spring15ormqueries.bootstrap;
 
 import com.cydeo.spring15ormqueries.repository.DepartmentRepository;
+import com.cydeo.spring15ormqueries.repository.EmployeeRepository;
 import com.cydeo.spring15ormqueries.repository.RegionRepository;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
@@ -10,10 +11,12 @@ public class DataGenerator implements CommandLineRunner {
 
     private final RegionRepository regionRepository;
     private final DepartmentRepository departmentRepository;
+    private final EmployeeRepository employeeRepository;
 
-    public DataGenerator(RegionRepository regionRepository, DepartmentRepository departmentRepository) {
+    public DataGenerator(RegionRepository regionRepository, DepartmentRepository departmentRepository, EmployeeRepository employeeRepository) {
         this.regionRepository = regionRepository;
         this.departmentRepository = departmentRepository;
+        this.employeeRepository = employeeRepository;
     }
 
     @Override
@@ -36,6 +39,11 @@ public class DataGenerator implements CommandLineRunner {
         System.out.println("findByDivisionEquals: " + departmentRepository.findByDivisionEquals("Health"));
         System.out.println("findDistinctTop3ByDivisionContaining: " + departmentRepository.findDistinctTop3ByDivisionContaining("Hea"));
         System.out.println("--------------------- DEPARTMENT END --------------------");
+
+        System.out.println("--------------------- EMPLOYEE START - JPQL --------------------");
+        System.out.println("employee detail with email: " + employeeRepository.getEmployeeDetail());
+        System.out.println("employee salary: " + employeeRepository.getEmployeeSalary());
+        System.out.println("--------------------- EMPLOYEE END --------------------");
 
 
     }
