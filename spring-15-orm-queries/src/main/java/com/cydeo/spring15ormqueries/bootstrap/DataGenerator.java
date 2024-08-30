@@ -6,6 +6,8 @@ import com.cydeo.spring15ormqueries.repository.RegionRepository;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
 
+import java.math.BigDecimal;
+
 @Component
 public class DataGenerator implements CommandLineRunner {
 
@@ -43,6 +45,8 @@ public class DataGenerator implements CommandLineRunner {
         System.out.println("--------------------- EMPLOYEE START - JPQL --------------------");
         System.out.println("employee detail with email: " + employeeRepository.getEmployeeDetail());
         System.out.println("employee salary: " + employeeRepository.getEmployeeSalary());
+
+        System.out.println("employee by salary native sql: " + employeeRepository.readEmployeeDetailBySalary(BigDecimal.valueOf(56752L)));
         System.out.println("--------------------- EMPLOYEE END --------------------");
 
 

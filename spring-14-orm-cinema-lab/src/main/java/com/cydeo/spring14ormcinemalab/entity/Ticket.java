@@ -29,5 +29,12 @@ public class Ticket extends BaseEntity {
     @JoinColumn(name="movie_cinema_id")
     private MovieCinema movieCinema;
 
-
+    @Override
+    public String toString() {
+        return "Ticket{" +
+                "dateTime=" + dateTime +
+                ", seatNumber=" + seatNumber +
+                ", rowNumber=" + rowNumber +
+                '}';
+    }
 }

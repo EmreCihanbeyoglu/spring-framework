@@ -20,4 +20,13 @@ public class UserAccount extends BaseEntity  {
     @OneToOne
     @JoinColumn(name = "account_details_id")
     private AccountDetails accountDetails;
+
+    @Override
+    public String toString() {
+        return "UserAccount{" +
+                "email='" + email + '\'' +
+                ", password='" + password + '\'' +
+                ", username='" + username + '\'' +
+                '}';
+    }
 }

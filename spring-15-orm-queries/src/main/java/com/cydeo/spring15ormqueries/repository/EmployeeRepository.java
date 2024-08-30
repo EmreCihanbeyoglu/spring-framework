@@ -1,8 +1,11 @@
 package com.cydeo.spring15ormqueries.repository;
 
 import com.cydeo.spring15ormqueries.entity.Employee;
+import jakarta.transaction.Transactional;
 import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.data.jpa.repository.Modifying;
 import org.springframework.data.jpa.repository.Query;
+import org.springframework.data.repository.query.Param;
 import org.springframework.stereotype.Repository;
 
 import java.math.BigDecimal;
@@ -56,4 +59,74 @@ public interface EmployeeRepository extends JpaRepository<Employee, Long> {
 
     @Query("SELECT e FROM Employee e WHERE e.email=?1 AND e.salary=?2")
     Optional<Employee> getEmployeeByEmailAndSalary(String email, BigDecimal salary);
+
+
+    // not equal
+    @Query("SELECT e FROM Employee e WHERE e.salary <> ?1")
+    List<Employee> getEmployeeSalaryNotEqual(BigDecimal salary);
+
+
+    // like - contains - startswith - endswith
+    @Query("SELECT e FROM Employee e WHERE e.firstName LIKE ?1")
+    List<Employee> getEmployeeFirstNameLike(String pattern);
+
+
+    // less than
+    @Query("SELECT e FROM Employee e WHERE e.salary < ?1")
+    List<Employee> getEmployeeSalaryLessThan(BigDecimal salary);
+
+    // greater than
+    @Query("SELECT e FROM Employee e WHERE e.salary > ?1")
+    List<Employee> getEmployeeSalaryGreaterThan(BigDecimal salary);
+
+    // before
+    @Query("SELECT e FROM Employee e WHERE e.hireDate > ?1")
+    List<Employee> getEmployeeHireDateBefore(LocalDate date);
+
+    // between
+    @Query("SELECT e FROM Employee e WHERE e.salary BETWEEN ?1 AND ?2")
+    List<Employee> getEmployeeSalaryBetween(BigDecimal start, BigDecimal end);
+
+    // null
+    @Query("SELECT e FROM Employee e WHERE e.email IS NULL")
+    Optional<Employee> getEmployeeEmailIsNull();
+
+
+    // not null
+    @Query("SELECT e FROM Employee e WHERE e.email IS NOT NULL")
+    Optional<Employee> getEmployeeEmailIsNotNull();
+
+    // sorting in ascending order
+    @Query("SELECT e FROM Employee e ORDER BY e.salary")
+    List<Employee> getEmployeeOrderBySalaryAsc();
+
+    // sorting in descending order
+
+    @Query("SELECT e FROM Employee e ORDER BY e.salary DESC")
+    List<Employee> getEmployeeOrderBySalaryDesc();
+
+
+
+    // NATIVE SQL
+    @Query(value = "SELECT * FROM employees WHERE salary=?1", nativeQuery=true)
+    List<Employee> readEmployeeDetailBySalary(BigDecimal salary);
+
+
+
+    // Named param
+    @Query("SELECT e FROM Employee e WHERE e.salary = :salary")
+    List<Employee> getEmpBySalary(@Param("salary") BigDecimal salary);
+
+    @Modifying
+    @Transactional
+    @Query("UPDATE Employee e SET e.email = 'admin@email.com' WHERE e.id = :id")
+    void updateEmployeeJPQL(@Param("id")int id);
+
+    @Modifying // necessary for modification
+    @Transactional // if there occurs any problem with operation, it roll back completely
+    @Query(value = "UPDATE employees SET email = 'admin@email.com' WHERE id = :id", nativeQuery = true)
+    void updateEmployeeNative(@Param("id")int id);
+
+
+
 }

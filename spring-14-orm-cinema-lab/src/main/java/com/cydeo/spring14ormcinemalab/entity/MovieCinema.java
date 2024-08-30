@@ -21,4 +21,11 @@ public class MovieCinema extends BaseEntity  {
 
     @Column(columnDefinition = "TIMESTAMP")
     private LocalDateTime dateTime;
+
+    @Override
+    public String toString() {
+        return "MovieCinema{" +
+                "dateTime=" + dateTime +
+                '}';
+    }
 }

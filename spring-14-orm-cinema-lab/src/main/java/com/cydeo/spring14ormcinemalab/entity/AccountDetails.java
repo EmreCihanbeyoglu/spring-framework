@@ -28,4 +28,19 @@ public class AccountDetails extends BaseEntity {
 
     @Enumerated(EnumType.STRING)
     private Role role;
+
+
+    @Override
+    public String toString() {
+        return "AccountDetails{" +
+                "name='" + name + '\'' +
+                ", address='" + address + '\'' +
+                ", country='" + country + '\'' +
+                ", city='" + city + '\'' +
+                ", state='" + state + '\'' +
+                ", age=" + age +
+                ", postalCode='" + postalCode + '\'' +
+                ", role=" + role +
+                '}';
+    }
 }

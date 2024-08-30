@@ -2,6 +2,8 @@ package com.cydeo.spring15ormqueries.repository;
 
 import com.cydeo.spring15ormqueries.entity.Course;
 import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.data.jpa.repository.Query;
+import org.springframework.data.repository.query.Param;
 import org.springframework.stereotype.Repository;
 
 import java.util.List;
@@ -30,6 +32,11 @@ public interface CourseRepository extends JpaRepository<Course, Long> {
 
     // find all courses by category and returns a stream
     Stream<Course> streamByCategory(String category);
+
+    @Query("SELECT c FROM Course c WHERE c.category = :category AND c.rating > :rating")
+    List<Course> findAllCByCatgoryAndRatingGreaterThan(@Param("category")String category, @Param("rating")int rating);
+
+
 
 
 }

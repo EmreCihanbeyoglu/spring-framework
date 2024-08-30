@@ -21,5 +21,11 @@ public class Cinema extends BaseEntity {
     @JoinColumn(name = "location_id")
     private Location location;
 
-
+    @Override
+    public String toString() {
+        return "Cinema{" +
+                "name='" + name + '\'' +
+                ", sponsoredName='" + sponsoredName + '\'' +
+                '}';
+    }
 }
