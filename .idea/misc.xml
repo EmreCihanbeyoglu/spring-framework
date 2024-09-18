@@ -17,6 +17,8 @@
         <option value="$PROJECT_DIR$/spring-13-orm-ecommerce/pom.xml" />
         <option value="$PROJECT_DIR$/spring-14-orm-cinema-lab/pom.xml" />
         <option value="$PROJECT_DIR$/spring-15-orm-queries/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-16-rest/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-17-rest-consuming-api/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">
