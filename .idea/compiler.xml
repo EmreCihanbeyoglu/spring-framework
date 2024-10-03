@@ -8,6 +8,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="spring-07-MVC-model" />
+        <module name="spring-19-unit-testing" />
         <module name="spring-14-orm-cinema-lab" />
         <module name="spring-08-thymeleaf" />
         <module name="spring-13-orm-ecommerce" />
@@ -19,6 +20,7 @@
         <module name="spring-15-orm-queries" />
         <module name="spring-05-springBoot-demo" />
         <module name="spring-17-rest-consuming-api" />
+        <module name="spring-18-rest-openapi" />
         <module name="employee-registration" />
         <module name="spring-04-abstraction" />
       </profile>
@@ -43,6 +45,7 @@
       <module name="spring-15-orm-queries" options="-parameters" />
       <module name="spring-16-rest" options="-parameters" />
       <module name="spring-17-rest-consuming-api" options="-parameters" />
+      <module name="spring-18-rest-openapi" options="-parameters" />
     </option>
   </component>
 </project>
