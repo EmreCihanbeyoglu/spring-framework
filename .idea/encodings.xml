@@ -19,5 +19,6 @@
     <file url="file://$PROJECT_DIR$/spring-16-rest/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/spring-17-rest-consuming-api/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/spring-18-rest-openapi/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-20-mocking/src/main/java" charset="UTF-8" />
   </component>
 </project>

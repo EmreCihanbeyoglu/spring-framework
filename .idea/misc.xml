@@ -21,6 +21,7 @@
         <option value="$PROJECT_DIR$/spring-17-rest-consuming-api/pom.xml" />
         <option value="$PROJECT_DIR$/spring-18-rest-openapi/pom.xml" />
         <option value="$PROJECT_DIR$/../spring-19-unit-testing/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-19-mocking/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">

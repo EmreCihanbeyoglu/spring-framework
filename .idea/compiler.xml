@@ -22,6 +22,7 @@
         <module name="spring-17-rest-consuming-api" />
         <module name="spring-18-rest-openapi" />
         <module name="employee-registration" />
+        <module name="spring-20-mocking" />
         <module name="spring-04-abstraction" />
       </profile>
     </annotationProcessing>
@@ -46,6 +47,7 @@
       <module name="spring-16-rest" options="-parameters" />
       <module name="spring-17-rest-consuming-api" options="-parameters" />
       <module name="spring-18-rest-openapi" options="-parameters" />
+      <module name="spring-20-mocking" options="-parameters" />
     </option>
   </component>
 </project>
