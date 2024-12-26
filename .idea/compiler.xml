@@ -13,6 +13,8 @@
         <module name="spring-08-thymeleaf" />
         <module name="spring-13-orm-ecommerce" />
         <module name="spring-11-orm-mapping-oneToOne" />
+        <module name="spring-lab-testing" />
+        <module name="spring-labs-employee-registration" />
         <module name="spring-16-rest" />
         <module name="spring-12-orm-many-relations" />
         <module name="spring-06-MVC-controller" />
@@ -21,7 +23,6 @@
         <module name="spring-05-springBoot-demo" />
         <module name="spring-17-rest-consuming-api" />
         <module name="spring-18-rest-openapi" />
-        <module name="employee-registration" />
         <module name="spring-20-mocking" />
         <module name="spring-04-abstraction" />
       </profile>
@@ -32,7 +33,6 @@
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
-      <module name="employee-registration" options="-parameters" />
       <module name="spring-05-springBoot-demo" options="-parameters" />
       <module name="spring-06-MVC-controller" options="-parameters" />
       <module name="spring-07-MVC-model" options="-parameters" />
@@ -48,6 +48,8 @@
       <module name="spring-17-rest-consuming-api" options="-parameters" />
       <module name="spring-18-rest-openapi" options="-parameters" />
       <module name="spring-20-mocking" options="-parameters" />
+      <module name="spring-lab-testing" options="-parameters" />
+      <module name="spring-labs-employee-registration" options="-parameters" />
     </option>
   </component>
 </project>

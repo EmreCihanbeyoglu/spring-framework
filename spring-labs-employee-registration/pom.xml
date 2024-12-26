@@ -9,7 +9,7 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>com.cydeo</groupId>
-    <artifactId>employee-registration</artifactId>
+    <artifactId>spring-labs-employee-registration</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>employee-registration</name>
     <description>employee-registration</description>
