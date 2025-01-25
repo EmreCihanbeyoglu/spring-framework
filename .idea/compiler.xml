@@ -15,6 +15,7 @@
         <module name="spring-11-orm-mapping-oneToOne" />
         <module name="spring-lab-testing" />
         <module name="spring-labs-employee-registration" />
+        <module name="spring-21-AOP" />
         <module name="spring-16-rest" />
         <module name="spring-12-orm-many-relations" />
         <module name="spring-06-MVC-controller" />
@@ -48,6 +49,7 @@
       <module name="spring-17-rest-consuming-api" options="-parameters" />
       <module name="spring-18-rest-openapi" options="-parameters" />
       <module name="spring-20-mocking" options="-parameters" />
+      <module name="spring-21-AOP" options="-parameters" />
       <module name="spring-lab-testing" options="-parameters" />
       <module name="spring-labs-employee-registration" options="-parameters" />
     </option>
